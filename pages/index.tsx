@@ -45,7 +45,7 @@ export default function Home() {
 				reader.onload = async r => {
 					hashList[id] = window.crypto.subtle.digest(
 						{ name: "SHA-256" },
-						r.target.result
+						r.target.result as ArrayBuffer
 					)
 					if (id == fileList.length-1) {
 						let allHash = await Promise.all(hashList)
