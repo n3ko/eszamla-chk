@@ -6,6 +6,24 @@
   background: rgba(255,255,255,.3);
 }
 
+.✔️  {
+	color: green;
+	font-size: 1.4em;
+}
+
+.✔️::after {
+	content: "✔️";
+	color: green;
+}
+.❌  {
+	color: red;
+	font-size: 1.1em;
+}
+
+.❌::after {
+	content: "❌";
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
