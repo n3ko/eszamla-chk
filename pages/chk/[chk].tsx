@@ -60,7 +60,7 @@ export default function Home() {
 						let allHash = await Promise.all(hashList)
 						allHash.map((hash,id) => {
 							fileList[id].hash = bytesToHexString(hash).toUpperCase()
-							fileList[id].ok = typeof chk === string && bytesToHexString(hash).toUpperCase() == chk.toUpperCase()
+							fileList[id].ok = typeof chk === 'string' && bytesToHexString(hash).toUpperCase() == chk.toUpperCase()
 						})
 						setState({ fileList });			
 					}
